@@ -3,12 +3,10 @@ name = "lmdb_test"
 version = "0.1.0"
 authors = ["zhangsoledad <787953403@qq.com>"]
 
+[profile.release]
+debug = true
+
 [dependencies]
+byteorder = "1"
 lmdb = "0.7.1"
-bincode = "0.8.0"
-serde = "=1.0"
-serde_derive = "=1.0"
-rayon = "0.8.2"
 tempdir = "0.3"
-
-
